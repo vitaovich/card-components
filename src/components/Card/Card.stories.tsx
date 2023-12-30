@@ -40,3 +40,57 @@ AceSpade.args = {
   cardSuit:'♠',
   cardValue:'A'
 };
+
+export const TwoOfHearts = Template.bind({});
+TwoOfHearts.args = {
+  cardSuit:'♥',
+  cardValue:'2'
+};
+
+export const ThreeOfHearts = Template.bind({});
+ThreeOfHearts.args = {
+  cardSuit:'♥',
+  cardValue:'3'
+};
+
+export const FourOfHearts = Template.bind({});
+FourOfHearts.args = {
+  cardSuit:'♥',
+  cardValue:'4'
+};
+
+export const FiveOfHearts = Template.bind({});
+FiveOfHearts.args = {
+  cardSuit:'♥',
+  cardValue:'5'
+};
+
+export const SixOfHearts = Template.bind({});
+SixOfHearts.args = {
+  cardSuit:'♥',
+  cardValue:'6'
+};
+
+export const SevenOfHearts = Template.bind({});
+SevenOfHearts.args = {
+  cardSuit:'♥',
+  cardValue:'7'
+};
+
+export const EightOfHearts = Template.bind({});
+EightOfHearts.args = {
+  cardSuit:'♥',
+  cardValue:'8'
+};
+
+export const NineOfHearts = Template.bind({});
+NineOfHearts.args = {
+  cardSuit:'♥',
+  cardValue:'9'
+};
+
+export const TenOfHearts = Template.bind({});
+TenOfHearts.args = {
+  cardSuit:'♥',
+  cardValue:'10'
+};

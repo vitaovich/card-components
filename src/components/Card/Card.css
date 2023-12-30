@@ -3,8 +3,8 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: 125px;
-  height: 200px;
+  width: 150px;
+  height: 240px;
   border: 1px solid black;
   border-radius: 10px;
   background-color: white;
@@ -43,15 +43,37 @@
   flex-grow: 1;
 }
 
+.card-space-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .card-value {
-  font-size: 20px;
+  font-size: 15px;
   font-weight: bold;
 }
 
 .card-suit {
-  font-size: 20px;
+  font-size: 15px;
 }
 
-.card-suit-single {
+.card-suit-md {
+  font-size: 30px;
+}
+
+.card-suit-lg {
   font-size: 50px;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
 }
