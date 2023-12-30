@@ -4,7 +4,7 @@
     "registry": "https://npm.pkg.github.com/vitaovich"
   },
   "version": "0.0.1",
-  "description": "A template for creating a react component library.",
+  "description": "A component library for cards.",
   "scripts": {
     "test": "jest",
     "rollup": "rollup -c",

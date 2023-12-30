@@ -1,7 +1,9 @@
 #!/bin/bash
 
+
+
 # Path to the original script (ensure this is correct)
-INITIALIZE_NPMRC_SCRIPT="/workspaces/react-component-library/bash/initialize_npmrc.sh"
+INITIALIZE_NPMRC_SCRIPT="/workspaces/card-components/bash/initialize_npmrc.sh"
 
 # Check if the original script exists and is executable
 if [ ! -f "$INITIALIZE_NPMRC_SCRIPT" ] || [ ! -x "$INITIALIZE_NPMRC_SCRIPT" ]; then
