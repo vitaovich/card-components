@@ -112,3 +112,24 @@ TenOfHearts.args = {
   cardValue:'10',
   isHidden: false
 };
+
+export const JackOfHearts = Template.bind({});
+JackOfHearts.args = {
+  cardSuit:'♥',
+  cardValue:'J',
+  isHidden: false
+};
+
+export const QueenOfHearts = Template.bind({});
+QueenOfHearts.args = {
+  cardSuit:'♥',
+  cardValue:'Q',
+  isHidden: false
+};
+
+export const KingOfHearts = Template.bind({});
+KingOfHearts.args = {
+  cardSuit:'♥',
+  cardValue:'K',
+  isHidden: false
+};

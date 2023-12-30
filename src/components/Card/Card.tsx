@@ -41,7 +41,10 @@ const Card = ({
     '7': 7,
     '8': 8,
     '9': 9,
-    '10': 10
+    '10': 10,
+    'J': 11,
+    'Q': 12,
+    'K': 13
   }
 
   const cardCenterLayout = (val: number) => {
@@ -178,6 +181,12 @@ const Card = ({
             <div className="card-suit-md">{cardSuit}</div>
           </div>
         </>
+      case 11:
+        return <div className="card-suit-lg">{cardValue}</div>
+      case 12:
+        return <div className="card-suit-lg">{cardValue}</div>
+      case 13:
+        return <div className="card-suit-lg">{cardValue}</div>
       default:
         return <div>Unknown Value</div>
     }
