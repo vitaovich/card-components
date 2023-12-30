@@ -1,9 +1,9 @@
 {
-  "name": "@vitaovich/react-component-library",
+  "name": "@vitaovich/card-components",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/vitaovich"
   },
-  "version": "0.0.3",
+  "version": "0.0.1",
   "description": "A template for creating a react component library.",
   "scripts": {
     "test": "jest",
@@ -13,14 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vitaovich/react-component-library.git"
+    "url": "git+https://github.com/vitaovich/card-components.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/vitaovich/react-component-library/issues"
+    "url": "https://github.com/vitaovich/card-components/issues"
   },
-  "homepage": "https://github.com/vitaovich/react-component-library#readme",
+  "homepage": "https://github.com/vitaovich/card-components#readme",
   "devDependencies": {
     "@babel/core": "^7.23.6",
     "@babel/preset-env": "^7.23.6",
