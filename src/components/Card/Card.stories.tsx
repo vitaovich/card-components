@@ -20,77 +20,95 @@ const Template: StoryFn<typeof Card> = (args) => <Card {...args} />;
 export const AceDiamond = Template.bind({});
 AceDiamond.args = {
   cardSuit:'♦',
-  cardValue:'A'
+  cardValue:'A',
+  isHidden: false
+};
+
+export const Hidden = Template.bind({});
+Hidden.args = {
+  isHidden: true
 };
 
 export const AceClover = Template.bind({});
 AceClover.args = {
   cardSuit:'☘',
-  cardValue:'A'
+  cardValue:'A',
+  isHidden: false
 };
 
 export const AceHeart = Template.bind({});
 AceHeart.args = {
   cardSuit:'♥',
-  cardValue:'A'
+  cardValue:'A',
+  isHidden: false
 };
 
 export const AceSpade = Template.bind({});
 AceSpade.args = {
   cardSuit:'♠',
-  cardValue:'A'
+  cardValue:'A',
+  isHidden: false
 };
 
 export const TwoOfHearts = Template.bind({});
 TwoOfHearts.args = {
   cardSuit:'♥',
-  cardValue:'2'
+  cardValue:'2',
+  isHidden: false
 };
 
 export const ThreeOfHearts = Template.bind({});
 ThreeOfHearts.args = {
   cardSuit:'♥',
-  cardValue:'3'
+  cardValue:'3',
+  isHidden: false
 };
 
 export const FourOfHearts = Template.bind({});
 FourOfHearts.args = {
   cardSuit:'♥',
-  cardValue:'4'
+  cardValue:'4',
+  isHidden: false
 };
 
 export const FiveOfHearts = Template.bind({});
 FiveOfHearts.args = {
   cardSuit:'♥',
-  cardValue:'5'
+  cardValue:'5',
+  isHidden: false
 };
 
 export const SixOfHearts = Template.bind({});
 SixOfHearts.args = {
   cardSuit:'♥',
-  cardValue:'6'
+  cardValue:'6',
+  isHidden: false
 };
 
 export const SevenOfHearts = Template.bind({});
 SevenOfHearts.args = {
   cardSuit:'♥',
-  cardValue:'7'
+  cardValue:'7',
+  isHidden: false
 };
 
 export const EightOfHearts = Template.bind({});
 EightOfHearts.args = {
   cardSuit:'♥',
-  cardValue:'8'
+  cardValue:'8',
+  isHidden: false
 };
 
 export const NineOfHearts = Template.bind({});
 NineOfHearts.args = {
   cardSuit:'♥',
-  cardValue:'9'
+  cardValue:'9',
+  isHidden: false
 };
 
 export const TenOfHearts = Template.bind({});
 TenOfHearts.args = {
   cardSuit:'♥',
-  cardValue:'10'
+  cardValue:'10',
+  isHidden: false
 };

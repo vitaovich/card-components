@@ -10,11 +10,20 @@ export interface CardProps {
    * Card suit. Can be ace, spade, heart, or diamond. ['♠','☘','♦','♥']
    */
   cardSuit: string;
+  /**
+   * Is this card hidden on the screen?
+   */
+  isHidden: boolean;
+  /**
+   * Optional click handler
+   */
+  onClick?: () => void;
 }
 
 const Card = ({
   cardValue = 'A',
   cardSuit = '♠',
+  isHidden = true,
   ...props
 }: CardProps) => {
   const suits = ['♠', '☘', '♦', '♥']
@@ -175,19 +184,30 @@ const Card = ({
   }
 
   return (
-    <div className={`card ${color}`}>
-      <div className="card-corner top-left">
-        <div className="card-value">{cardValue}</div>
-        <div className="card-suit">{cardSuit}</div>
-      </div>
-      <div className="card-space-between flex-grow-1 flex-row">
-        {cardCenterLayout(cardValMapping[cardValue])}
-      </div>
-      <div className="card-corner bottom-right">
-        <div className="card-value">{cardValue}</div>
-        <div className="card-suit">{cardSuit}</div>
-      </div>
-    </div>
+    <>
+      {isHidden &&
+        <div className="card" {...props}>
+          Back Placeholder
+        </div>
+      }
+      {!isHidden &&
+        <div className={`card ${color}`} {...props}>
+          <div className="card-corner top-left">
+            <div className="card-value">{cardValue}</div>
+            <div className="card-suit">{cardSuit}</div>
+          </div>
+          <div className="card-space-between flex-grow-1 flex-row">
+            {cardCenterLayout(cardValMapping[cardValue])}
+          </div>
+          <div className="card-corner bottom-right">
+            <div className="card-value">{cardValue}</div>
+            <div className="card-suit">{cardSuit}</div>
+          </div>
+        </div>
+
+      }
+    </>
+
   )
 };
 
