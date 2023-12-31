@@ -39,6 +39,22 @@ Hidden.args = {
   isHidden: true
 };
 
+export const IsValid = Template.bind({});
+IsValid.args = {
+  cardSuit:'♦',
+  cardValue:'A',
+  isHidden: false,
+  isValid: true
+};
+
+export const IsNotValid = Template.bind({});
+IsNotValid.args = {
+  cardSuit:'♦',
+  cardValue:'A',
+  isHidden: false,
+  isValid: false
+};
+
 export const AceClover = Template.bind({});
 AceClover.args = {
   cardSuit:'☘',

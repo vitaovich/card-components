@@ -1,4 +1,15 @@
 .deck-spread {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
+}
+
+.deck-stacked {
+    margin-left: -10px;
+}
+
+.card-stack {
+    position: absolute;
+    top: 0;
+    left: 0;
 }

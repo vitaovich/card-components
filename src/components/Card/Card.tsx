@@ -15,6 +15,10 @@ export interface CardProps {
    */
   isHidden: boolean;
   /**
+   * Is this card usable?
+   */
+  isValid: boolean;
+  /**
    * Optional click handler
    */
   onClick?: () => void;
@@ -24,6 +28,7 @@ const Card = ({
   cardValue = 'A',
   cardSuit = '♠',
   isHidden = true,
+  isValid = true,
   ...props
 }: CardProps) => {
   const suits = ['♠', '☘', '♦', '♥']
@@ -185,15 +190,17 @@ const Card = ({
     }
   }
 
+  const isValidClassNames = isValid ? '' : 'invalid' 
+
   return (
     <>
       {isHidden &&
-        <div className="card" {...props}>
+        <div className={`card ${isValidClassNames}`} {...props}>
           Back Placeholder
         </div>
       }
       {!isHidden &&
-        <div className={`card ${color}`} {...props}>
+        <div className={`card ${color} ${isValidClassNames}`} {...props}>
           <div className="card-corner top-left">
             <div className="card-value">{cardValue}</div>
             <div className="card-suit">{cardSuit}</div>

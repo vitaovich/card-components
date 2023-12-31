@@ -5,17 +5,17 @@
   border: 1px solid black;
   border-radius: 0.5em;
   background-color: white;
-  box-shadow: 0.1em 0.1em 0.25em rgba(0,0,0,0.5);
+  box-shadow: 0.1em 0.1em 0.25em rgba(0, 0, 0, 0.5);
   padding: 0.5em;
   box-sizing: border-box;
   font-size: 0.6rem;
 }
 
-.default-color{
+.default-color {
   color: black;
 }
 
-.secondary-color{
+.secondary-color {
   color: red;
 }
 
@@ -77,4 +77,9 @@
 
 .flex-grow-1 {
   flex-grow: 1;
+}
+
+.invalid {
+  filter: grayscale(100%); /* Convert the card to grayscale */
+  opacity: 0.5; /* Reduce the opacity to make it look faded */
 }
