@@ -1,0 +1,4 @@
+.deck-spread {
+    display: flex;
+    flex-wrap: wrap;
+}

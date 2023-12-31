@@ -5,6 +5,6 @@ import Deck from "./Deck";
 
 describe("Deck", () => {
   test("renders the Deck component", () => {
-    render(<Deck label="Hello world!" />);
+    render(<Deck />);
   });
 });

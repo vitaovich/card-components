@@ -11,13 +11,7 @@ export default {
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
 const Template: StoryFn<typeof Deck> = (args) => <Deck {...args} />;
 
-export const HelloWorld = Template.bind({});
+export const StandardDeck = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
-HelloWorld.args = {
-  label: "Hello world!",
-};
-
-export const ClickMe = Template.bind({});
-ClickMe.args = {
-  label: "Click me!",
+StandardDeck.args = {
 };
