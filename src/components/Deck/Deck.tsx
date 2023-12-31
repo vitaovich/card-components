@@ -42,13 +42,17 @@ export interface DeckProps {
    * Is this deck stacked?
    */
   isStacked: boolean;
+  /**
+   * Optional click handler
+   */
+  onClick?: () => void;
 }
 
 const Deck = ({
   cards = CreateDeck(),
   isStacked = true,
   ...props
-}) => {
+}: DeckProps) => {
 
   const stackedClass = isStacked ? 'card-stack' : ''
   const deckOfCards = cards.map((card, idx) =>
@@ -66,7 +70,7 @@ const Deck = ({
 
   return (
     <>
-      <div className={`deck-spread`}>
+      <div className={`deck-spread`} {...props}>
         <Card isHidden={true} cardValue={""} cardSuit={""} isValid={false} />
         {cards.length > 0 &&
           <>
