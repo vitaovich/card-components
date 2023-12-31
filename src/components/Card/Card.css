@@ -1,8 +1,5 @@
 .card {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
   width: 180px;
   height: 240px;
   border: 1px solid black;
@@ -40,13 +37,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-grow: 1;
 }
 
 .card-space-between {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  height: 100%;
 }
 
 .card-value {
@@ -59,7 +56,7 @@
 }
 
 .card-suit-md {
-  font-size: 30px;
+  font-size: 45px;
 }
 
 .card-suit-lg {
@@ -67,7 +64,10 @@
 }
 
 .flex-col {
+  display: flex;
   flex-direction: column;
+  height: 100%;
+  justify-content: space-evenly;
 }
 
 .flex-row {

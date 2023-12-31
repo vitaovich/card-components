@@ -53,59 +53,52 @@ const Card = ({
         return <div className="card-suit-lg">{cardSuit}</div>
       case 2:
         return <>
-          <div className="card-space-between flex-col"></div>
-          <div className="card-space-between flex-col">
+          <div className="flex-col">
             <div className="card-suit-md">{cardSuit}</div>
             <div className="card-suit-md">{cardSuit}</div>
           </div>
-          <div className="card-space-between flex-col"></div>
         </>
       case 3:
         return <>
-          <div className="card-space-between flex-col"></div>
-          <div className="card-space-between flex-col">
+          <div className="flex-col">
             <div className="card-suit-md">{cardSuit}</div>
             <div className="card-suit-md">{cardSuit}</div>
             <div className="card-suit-md">{cardSuit}</div>
           </div>
-          <div className="card-space-between flex-col"></div>
         </>
       case 4:
         return <>
-          <div className="card-space-between flex-col">
+          <div className="flex-col">
             <div className="card-suit-md">{cardSuit}</div>
             <div className="card-suit-md">{cardSuit}</div>
           </div>
-          <div className="card-space-between flex-col">
-          </div>
-          <div className="card-space-between flex-col">
+          <div className="flex-col">
             <div className="card-suit-md">{cardSuit}</div>
             <div className="card-suit-md">{cardSuit}</div>
           </div>
         </>
       case 5:
         return <>
-          <div className="card-space-between flex-col">
+          <div className="flex-col">
             <div className="card-suit-md">{cardSuit}</div>
             <div className="card-suit-md">{cardSuit}</div>
           </div>
-          <div className="card-space-between flex-col">
+          <div className="flex-col">
             <div className="card-suit-md">{cardSuit}</div>
           </div>
-          <div className="card-space-between flex-col">
+          <div className="flex-col">
             <div className="card-suit-md">{cardSuit}</div>
             <div className="card-suit-md">{cardSuit}</div>
           </div>
         </>
       case 6:
         return <>
-          <div className="card-space-between flex-col">
+          <div className="flex-col">
             <div className="card-suit-md">{cardSuit}</div>
             <div className="card-suit-md">{cardSuit}</div>
             <div className="card-suit-md">{cardSuit}</div>
           </div>
-          <div className="card-space-between flex-col"></div>
-          <div className="card-space-between flex-col">
+          <div className="flex-col">
             <div className="card-suit-md">{cardSuit}</div>
             <div className="card-suit-md">{cardSuit}</div>
             <div className="card-suit-md">{cardSuit}</div>
@@ -113,15 +106,15 @@ const Card = ({
         </>
       case 7:
         return <>
-          <div className="card-space-between flex-col">
+          <div className="flex-col">
             <div className="card-suit-md">{cardSuit}</div>
             <div className="card-suit-md">{cardSuit}</div>
             <div className="card-suit-md">{cardSuit}</div>
           </div>
-          <div className="card-space-between flex-col">
+          <div className="flex-col">
             <div className="card-suit-md">{cardSuit}</div>
           </div>
-          <div className="card-space-between flex-col">
+          <div className="flex-col">
             <div className="card-suit-md">{cardSuit}</div>
             <div className="card-suit-md">{cardSuit}</div>
             <div className="card-suit-md">{cardSuit}</div>
@@ -129,16 +122,16 @@ const Card = ({
         </>
       case 8:
         return <>
-          <div className="card-space-between flex-col">
+          <div className="flex-col">
             <div className="card-suit-md">{cardSuit}</div>
             <div className="card-suit-md">{cardSuit}</div>
             <div className="card-suit-md">{cardSuit}</div>
           </div>
-          <div className="card-space-between flex-col">
+          <div className="flex-col">
             <div className="card-suit-md">{cardSuit}</div>
             <div className="card-suit-md">{cardSuit}</div>
           </div>
-          <div className="card-space-between flex-col">
+          <div className="flex-col">
             <div className="card-suit-md">{cardSuit}</div>
             <div className="card-suit-md">{cardSuit}</div>
             <div className="card-suit-md">{cardSuit}</div>
@@ -146,16 +139,16 @@ const Card = ({
         </>
       case 9:
         return <>
-          <div className="card-space-between flex-col">
+          <div className="flex-col">
             <div className="card-suit-md">{cardSuit}</div>
             <div className="card-suit-md">{cardSuit}</div>
             <div className="card-suit-md">{cardSuit}</div>
             <div className="card-suit-md">{cardSuit}</div>
           </div>
-          <div className="card-space-between flex-col">
+          <div className="flex-col">
             <div className="card-suit-md">{cardSuit}</div>
           </div>
-          <div className="card-space-between flex-col">
+          <div className="flex-col">
             <div className="card-suit-md">{cardSuit}</div>
             <div className="card-suit-md">{cardSuit}</div>
             <div className="card-suit-md">{cardSuit}</div>
@@ -164,17 +157,17 @@ const Card = ({
         </>
       case 10:
         return <>
-          <div className="card-space-between flex-col">
+          <div className="flex-col">
             <div className="card-suit-md">{cardSuit}</div>
             <div className="card-suit-md">{cardSuit}</div>
             <div className="card-suit-md">{cardSuit}</div>
             <div className="card-suit-md">{cardSuit}</div>
           </div>
-          <div className="card-space-between flex-col">
+          <div className="flex-col">
             <div className="card-suit-md">{cardSuit}</div>
             <div className="card-suit-md">{cardSuit}</div>
           </div>
-          <div className="card-space-between flex-col">
+          <div className="flex-col">
             <div className="card-suit-md">{cardSuit}</div>
             <div className="card-suit-md">{cardSuit}</div>
             <div className="card-suit-md">{cardSuit}</div>
@@ -205,8 +198,10 @@ const Card = ({
             <div className="card-value">{cardValue}</div>
             <div className="card-suit">{cardSuit}</div>
           </div>
-          <div className="card-space-between flex-grow-1 flex-row">
+          <div className="card-center flex-grow-1">
+            <div className="card-space-between flex-grow-1">
             {cardCenterLayout(cardValMapping[cardValue])}
+            </div>
           </div>
           <div className="card-corner bottom-right">
             <div className="card-value">{cardValue}</div>
