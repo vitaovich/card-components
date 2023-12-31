@@ -1,23 +1,7 @@
 import React from "react";
 import "./Deck.css";
 import Card from "../Card";
-
-type Suit = '♠' | '☘' | '♦' | '♥';
-type Rank = 'A' | '2' | '3' | '4' | '5' | '6' | '7' | '8' | '9' | '10' | 'J' | 'Q' | 'K';
-
-class CardInfo {
-  suit: Suit;
-  rank: Rank;
-
-  constructor(suit: Suit, rank: Rank) {
-    this.suit = suit;
-    this.rank = rank;
-  }
-
-  display(): string {
-    return `${this.rank} of ${this.suit}`;
-  }
-}
+import CardInfo, { Rank, Suit } from "../../models/CardInfo";
 
 const suits: Suit[] = ['♠', '♦', '☘', '♥'];
 const ranks: Rank[] = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K'];
@@ -55,28 +39,21 @@ const Deck = ({
 }: DeckProps) => {
 
   const stackedClass = isStacked ? 'card-stack' : ''
-  const deckOfCards = cards.map((card, idx) =>
-    <>
-      {isStacked &&
-        <div className={`${stackedClass}`} style={{ transform: `translateX(${idx * 2}px)` }}>
-          <Card key={card.rank + card.suit} cardValue={card.rank} cardSuit={card.suit} isHidden={false} isValid={true} />
-        </div>
-      }
-      {!isStacked &&
-        <Card key={card.rank + card.suit} cardValue={card.rank} cardSuit={card.suit} isHidden={false} isValid={true} />
-      }
-    </>
+  const deckOfCards = cards.map((card, idx) => {
+    if (isStacked) {
+      return <div key={idx} className={`${stackedClass}`} style={{ transform: `translateX(${idx * 2}px)` }}>
+        <Card cardValue={card.rank} cardSuit={card.suit} isHidden={false} isValid={true} />
+      </div>
+    }
+    return <Card key={idx} cardValue={card.rank} cardSuit={card.suit} isHidden={false} isValid={true} />
+  }
   )
 
   return (
     <>
       <div className={`deck-spread`} {...props}>
         <Card isHidden={true} cardValue={""} cardSuit={""} isValid={false} />
-        {cards.length > 0 &&
-          <>
-            {deckOfCards}
-          </>
-        }
+        {deckOfCards}
       </div>
     </>
   )
